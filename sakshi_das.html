@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BootstrapWebsite</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<!--cdn-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+
+
+<body>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+background: #E0EAFC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+/*image at right*/
+.left{
+  
+  border-radius: 50%;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+
+
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    columns: 2;
+    columns: 12em;
+
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 25%;
+}
+
+ .center {
+        text-align:center;
+        width:100%;
+    }
+   
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+
+
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-html5{
+  font-size: 250px;
+  color:red;
+  
+}
+.fa-css3{
+  font-size: 250px;
+  color:blue;
+  text-align:right;
+  position: center;
+}
+.fa-js{
+   font-size: 250px;
+  color:yellow;
+text-align:right;
+  position:right;
+ width: 50px;
+  height: 50px;
+  position: relative;
+  top: 15px;
+  margin-right: 10px;
+  
+}
+#home{
+
+ font-size:24px;
+/*text-align:right;
+  position:right;*/
+ width: 50px;
+  height: 50px;
+  position: relative;
+ 
+  padding:30px;
+ 
+
+
+  height:500px;
+  width: 100%;
+
+}
+.navbar{
+  background: #1FA2FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+</style>
+
+  <nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand mb-0 h1" href="#">WebDevelopment</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <form class="navbar-right">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#my skill">my skill</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#blog">blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">contact</a>
+        </li>
+          
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </form>
+</div>
+</nav>
+<!--HOME-->
+  <div id="home">
+    <button type="submit" class="btn btn-primary"  >my resume</button>
+     <p> hi, sakshi das here 😀😍</p> 
+     <center>
+    <img src="https://i2.wp.com/nofiredrills.com/wp-content/uploads/2016/10/myavatar.png?fit=400%2C400&ssl=1 " alt="something went wrong" class="left" >
+ </center>
+</div>
+<br>
+<br>
+<br>
+
+<!--myskill-->
+<div id = "my skill">
+  <div class="row">
+    <header>
+      <h1>MY SKILLS</h1>
+    </header>
+  <div class="col-sm-3"> 
+    <i class="fa fa-html5 "aria-hidden="true"  ></i>
+  </div>
+    <div class="col-sm-3">
+    <i class="fa fa-css3 " aria-hidden="true" ></i>
+    </div>
+    <div class="col-sm-3">
+      <i class="fab fa-js" aria-hidden="true"></i>
+    </div>
+  
+</div>
+ 
+</div>
+<!--blog-->
+<div id="blog">
+  <div class="card" >
+    <h1> my blog</h1>
+    <img src="img.jpg">
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--section-->
+<div id="my work">
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>html 5</h3>
+      
+      <p>HTML provides the basic structure of sites, which is enhanced and modified by other
+       technologies like CSS and JavaScript.
+     HTML is at the core of every web page, regardless the complexity of a site or number of technologies involved. It's an essential skill for any web professional. It's the starting point for anyone learning how to create content for the web. And, luckily for us, it's surprisingly easy to learn.</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>css 3</h3>
+     
+      
+      <p>  If HTML is the drywall, CSS is the paint.
+
+Whereas HTML was the basic structure of your website, CSS is what gives your entire website its style. Those slick colors, interesting fonts, and background images? All thanks to CSS. This language affects the entire mood and tone of a web page, making it an incredibly powerful tool .</p>
+    
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>js </h3>
+       
+    
+      <p>
+
+
+
+JavaScript is a more complicated language than HTML or CSS, and it wasn't released in beta form until 1995. Nowadays, JavaScript is supported by all modern web browsers and is used on almost every site on the web for more powerful and complex functionality.
+
+
+
+</p>
+     
+    </div>
+  </div>
+</div>
+<!--section-->
+
+<!--contact-us-->
+<div class="container">
+<div id="contact">
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
+<button type="button" class="btn btn-primary">submit</button>
+</div>
+</div>
+<!--footer-->
+<footer class="page-footer font-small bg-dark">
+  <!--social-->
+<div class="center">
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-facebook"></a>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> bootstrap.com</a>
+  </div>
+  </div>
+</footer>
+<!-- Footer -->
+</body>
+</html>
+      
